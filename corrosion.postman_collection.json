@@ -47,6 +47,27 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "cars/get_package_item_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/offers/cars/get_package_item_types",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						"cars",
+						"get_package_item_types"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [

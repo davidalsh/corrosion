@@ -4,20 +4,15 @@ from offers.cars.models import (
     CarSegment,
     CarBodyStyle,
     Package,
-    Upholstery,
-    MultimediaSystem,
-    Color,
-    Rims,
+    PackageItem,
+    PackageItemType,
 )
 
 models = (
     Car,
     CarSegment,
     CarBodyStyle,
-    Upholstery,
-    MultimediaSystem,
-    Color,
-    Rims,
+    PackageItemType,
 )
 
 
@@ -27,3 +22,8 @@ admin.site.register(models)
 @admin.register(Package)
 class PackageAdmin(admin.ModelAdmin):
     ordering = ("car__name", "name")
+
+
+@admin.register(PackageItem)
+class PackageItemAdmin(admin.ModelAdmin):
+    ordering = ("package_item_type", "name")
