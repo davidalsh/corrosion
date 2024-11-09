@@ -25,3 +25,6 @@ Simple backend application for managing corrosion's offers.
 # Notes
 *Project has SQLite DB, which already contain all needed records for testing (so just start the project)
 Use django admin panel to manage Corrosion's products.*
+### admin creds:
+   username: `admin`\
+   password: `adminadmin`
