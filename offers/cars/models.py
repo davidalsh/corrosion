@@ -29,7 +29,7 @@ class PackageItemType(BaseModel):
 
 
 class PackageItem(CarItem):
-    package_item_type = models.ForeignKey(PackageItemType, on_delete=models.CASCADE, related_name='package_items')
+    package_item_type = models.ForeignKey(PackageItemType, on_delete=models.CASCADE, related_name="package_items")
 
     def __str__(self):
         return f"{self.package_item_type} - {self.name}"

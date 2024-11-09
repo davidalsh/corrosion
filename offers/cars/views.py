@@ -9,6 +9,6 @@ class CarViewSet(ReadOnlyModelViewSet):
     queryset = Car.objects.all()
     serializer_class = CarSerializer
 
-    @action(detail=False, methods=['GET'])
+    @action(detail=False, methods=["GET"])
     def get_package_item_types(self, request):
         return Response(PackageItemTypeSerializer(PackageItemType.objects.all(), many=True).data)
